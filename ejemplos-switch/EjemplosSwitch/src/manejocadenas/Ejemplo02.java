@@ -15,7 +15,7 @@ public class Ejemplo02 {
         String pais;
         
         pais = "Ecuador";
-        char letra = pais.charAt(0); //Sirve para obtener la letra de una cadena utilizando numeros para saber la ubicacion de la letra en la cadena
+        char letra = pais.charAt(0); //Sirve para obtener la letra de una cadena. Utilizando numeros para saber la ubicacion de la letra en la cadena
         System.out.printf("%s\n", letra);
         
     }
