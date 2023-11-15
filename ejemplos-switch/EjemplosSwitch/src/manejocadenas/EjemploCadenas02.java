@@ -13,32 +13,36 @@ import java.util.Scanner;
  * @author reroes
  */
 public class EjemploCadenas02 {
+
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        // Esta linea de codigos nos permiten ingresar datos por teclado
         entrada.useLocale(Locale.US);
+        // Sirve para estandarizar una forma de escritura para el codigo
         String cadenaFinal = "Datos Ingresados\n";
         
         System.out.println("Ingrese la ciudad");
         String ciudad = entrada.nextLine(); // Quito
-        
-        
+
         cadenaFinal = String.format("%sCiudad:%s\n",
                 cadenaFinal, ciudad);
-        
+        // Sirve para almacenar cadenas con un formato
+
         System.out.println("Ingrese la provincia");
         String provincia = entrada.nextLine(); // 
-        
-        cadenaFinal = String.format("%sProvincia:%s\n",  
+
+        cadenaFinal = String.format("%sProvincia:%s\n",
                 cadenaFinal,
                 provincia);
-        
+
         System.out.println("Ingrese la país");
         String pais = entrada.nextLine(); // 
-        
-        cadenaFinal = String.format("%sPaís:%s\n",  
-                cadenaFinal, 
+
+        cadenaFinal = String.format("%sPaís:%s\n",
+                cadenaFinal,
                 pais);
-        
+
         System.out.printf("%s", cadenaFinal);
+
     }
 }
